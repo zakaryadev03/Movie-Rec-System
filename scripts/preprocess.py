@@ -27,5 +27,5 @@ movies = movies[movies['movieId'].isin(ratings['movieId'].unique())]
 print("Movies shape after alignment:", movies.shape)
 
 # Save cleaned data
-ratings.to_csv('data/cleaned/cleaned_ratings.csv', index=False)
-movies.to_csv('data/cleaned/cleaned_movies.csv', index=False)
+ratings.to_csv('../data/cleaned/cleaned_ratings.csv', index=False)
+movies.to_csv('../data/cleaned/cleaned_movies.csv', index=False)
