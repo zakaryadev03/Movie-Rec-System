@@ -8,13 +8,10 @@ This repository contains the cleaned and preprocessed dataset for our collaborat
 
 ### **Cleaned Files**
 1. **`cleaned_ratings.csv`**:  
-   - Columns: `userId`, `movieId`, `rating`  
-   - Size: `X GB` (originally `Y GB` before cleaning)  
-   - Rows: `Z million` (filtered from original `N million`)  
+   - Columns: `userId`, `movieId`, `rating`   
 
 2. **`cleaned_movies.csv`**:  
-   - Columns: `movieId`, `title`, `genres` (pipe-separated)  
-   - Size: `A MB`  
+   - Columns: `movieId`, `title`, `genres` 
 
 ### **Key Changes from Raw Data**
 - Removed duplicate ratings (same user-movie pairs).  
