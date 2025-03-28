@@ -23,14 +23,15 @@ This repository contains the cleaned and preprocessed dataset for our collaborat
 
 ## 🛠️ How to Use
 ### **1. Folder structure**
-Movie-Rec-System/
-├── data/
-│   ├── raw/                  # Original files (excluded via .gitignore)
-│   └── cleaned/              # Cleaned datasets (cleaned_ratings.csv, cleaned_movies.csv)
-├── notebooks/                # Jupyter notebooks for EDA/modeling
-├── scripts/
-│   └── preprocess.py         # Cleaning script
-└── README.md
+## 📂 Folder Structure  
+`Movie-Rec-System/`  
+├── `data/`  
+│   ├── `raw/`              # 🗃️ Original files (*.gitignored*)  
+│   └── `cleaned/`          # 🧹 Cleaned datasets (`cleaned_ratings.csv`, `cleaned_movies.csv`)  
+├── `notebooks/`            # 📓 Jupyter notebooks (EDA/modeling)  
+├── `scripts/`  
+│   └── `preprocess.py`     # 🐍 Cleaning script  
+└── `README.md`             # 📜 You’re here! 
 ### **2. Run the preprocess.py**
 ``` pip install pandas matplotlib
 ``` python preprocess.py
