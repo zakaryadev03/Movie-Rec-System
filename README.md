@@ -32,6 +32,7 @@ This repository contains the cleaned and preprocessed dataset for our collaborat
 ├── `scripts/`  
 │   └── `preprocess.py`     # 🐍 Cleaning script  
 └── `README.md`             # 📜 You’re here! 
-### **2. Run the preprocess.py**
-``` pip install pandas matplotlib
-``` python preprocess.py
+### 2. Run the preprocessing
+```bash
+pip install pandas matplotlib
+python preprocess.py
