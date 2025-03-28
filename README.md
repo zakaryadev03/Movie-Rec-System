@@ -30,9 +30,16 @@ This repository contains the cleaned and preprocessed dataset for our collaborat
 │   └── `cleaned/`          # 🧹 Cleaned datasets (`cleaned_ratings.csv`, `cleaned_movies.csv`)  
 ├── `notebooks/`            # 📓 Jupyter notebooks (EDA/modeling)  
 ├── `scripts/`  
-│   └── `preprocess.py`     # 🐍 Cleaning script  
+│   └── `preprocess.py`     # 🐍 Cleaning script
+
+│   └── `analyse_traitement.py` # Analyzes the cleaned movie ratings dataset to extract key insights
+
 └── `README.md`             # 📜 You’re here! 
 ### 2. Run the preprocessing
 ```bash
 pip install pandas matplotlib
 python preprocess.py
+```
+### 3. Movie rating analysis
+```bash
+python analyse_traitement.py
