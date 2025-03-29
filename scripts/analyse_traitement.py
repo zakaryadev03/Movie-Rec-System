@@ -1,11 +1,11 @@
 import pandas as pd
 
 # Load the cleaned data
-df = pd.read_csv("../data/cleaned/cleaned_ratings.csv")
+df = pd.read_csv("data/cleaned/cleaned_ratings.csv")
 
 # Load movie titles (if available)
 try:
-    movies = pd.read_csv("../data/cleaned/cleaned_movies.csv")  # Adjust path if needed
+    movies = pd.read_csv("data/cleaned/cleaned_movies.csv")  # Adjust path if needed
     df = df.merge(movies, on="movieId", how="left")
 except FileNotFoundError:
     print("Movie titles file not found. Skipping movie title analysis.")

@@ -1,7 +1,7 @@
 import pandas as pd
 
-ratings = pd.read_csv('../data/raw/ratings.csv')
-movies = pd.read_csv('../data/raw/movies.csv')
+ratings = pd.read_csv('data/raw/ratings.csv')
+movies = pd.read_csv('data/raw/movies.csv')
 
 # Remove duplicates
 ratings = ratings.drop_duplicates(subset=['userId', 'movieId'], keep='last')
@@ -27,5 +27,5 @@ movies = movies[movies['movieId'].isin(ratings['movieId'].unique())]
 print("Movies shape after alignment:", movies.shape)
 
 # Save cleaned data
-ratings.to_csv('../data/cleaned/cleaned_ratings.csv', index=False)
-movies.to_csv('../data/cleaned/cleaned_movies.csv', index=False)
+ratings.to_csv('data/cleaned/cleaned_ratings.csv', index=False)
+movies.to_csv('data/cleaned/cleaned_movies.csv', index=False)
